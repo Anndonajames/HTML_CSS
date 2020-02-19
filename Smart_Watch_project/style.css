@@ -1,0 +1,110 @@
+#clock {
+    margin-left: 390px;
+    margin-top: -550px;
+    font-size: 40px;
+}
+
+.icon {
+    margin-left: 410px;
+    margin-top: 100px;
+}
+
+#id1 {
+    color: rgb(83, 81, 81);
+}
+
+#id2 {
+    margin-left: 50px;
+    color: rgb(83, 81, 81);
+}
+
+#id3 {
+    margin-left: 50px;
+    color: rgb(83, 81, 81);
+}
+
+button {
+    background-color: white;
+    border: none;
+    margin-right: -50px;
+}
+
+.button {
+    margin-left: 420px;
+    margin-top: -580px;
+}
+
+audio {
+    margin-left: 100px;
+    margin-top: -580px;
+}
+
+.main-1 {
+    background-color: aqua;
+}
+
+.icons {
+    margin-left: -220px;
+    margin-top: -530px;
+    /* background-color: blue; */
+    padding-right: 250px;
+    padding-bottom: -200px;
+}
+
+.music {
+    margin-left: 100%;
+    margin-top: -350px;
+}
+
+#start {
+    margin-left: 5px;
+    padding-right: 25px;
+    color: navy;
+}
+
+#stop {
+    margin-left: 30px;
+    color: navy;
+    padding-right: 25px;
+}
+
+#clear {
+    margin-left: 30px;
+    color: navy;
+    padding-right: 25px;
+}
+
+#date {
+    margin-left: 440px;
+    font-size: 20px;
+}
+
+#display {
+    border: 1px solid black;
+    width: 280px;
+    height: 250px;
+}
+
+
+/* .audio_audio {
+    margin-bottom: -100px;
+    padding-bottom: 15px;
+} */
+
+.table {
+    border: 1px solid white;
+    width: 280px;
+    height: 250px;
+    margin-left: 350px;
+    margin-top: -640px;
+    overflow-y: scroll;
+}
+
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+#image {
+    margin-left: 380px;
+    margin-top: -640px;
+}

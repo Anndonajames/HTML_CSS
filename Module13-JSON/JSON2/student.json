@@ -1,0 +1,20 @@
+{
+    "details": [
+
+        {
+
+            "Name": "Ann Dona James",
+            "CollegeName": "AJCE",
+            "Department": "MCA",
+            "map": "images/img1.jpg"
+
+        },
+        {
+            "Name": "Jinsha Ravi",
+            "CollegeName": "FISAT",
+            "Department": "BTech",
+            "map": "images/img1.jpg"
+        }
+
+    ]
+}

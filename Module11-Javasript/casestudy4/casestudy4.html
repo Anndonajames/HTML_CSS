@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Responsive</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" href="width=device-width,intial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.js">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="heading">Registration<i class="fa fa-registered fa-2x"></i></h2>
+        <div class="addUser">
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+                <p>Registration Details<i class="fa fa-user-plus fa-2x">
+                </i></p>
+                <div class="col-md-8">
+                    <input type="text" placeholder="First Name" id="fname" required="required"><br>
+                    <input type="text" placeholder="Last Name" id="lname" required="required" minlength="2"><br>
+                    <input type="text" placeholder="City" id="city" required="required"><br>
+                    <input type="text" placeholder="State" id="state" required="required"><br>
+                    <input type="text" placeholder="Qualification" id="fname" required="required"><br>
+                    <input type="date" name="date" id="date"><br>
+                    <input type="text" placeholder="Username" id="city" required="required"><br>
+                    <input type="email" placeholder="Email" id="email" required="required"><br>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-primary" id="addUser" onclick="addUser()">Register</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <p>User List<i class="fa fa-list-alt fa-2x"></i></p>
+                </div>
+            </div>
+            <div class="user" id="userList"></div>
+        </div>
+    </div>
+</body>
+
+</html>

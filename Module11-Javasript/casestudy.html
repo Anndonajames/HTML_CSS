@@ -1,0 +1,89 @@
+<html>
+<script>
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var age = document.getElementById("age").value;
+    age = parseInt(age);
+
+    function myfunction() {
+
+        ok = "true";
+        if (fname.length > 10 || fname.length < 0) {
+            alert("Invalid First name");
+            ok = "false";
+        }
+        if (lname.length > 10 || lname.length < 0) {
+            alert("Invalid Last name");
+            ok = "false";
+        }
+        if (age < 10 || age > 100 || isNaN(age)) {
+            alert("Invalid age");
+            ok = "false";
+        }
+        if (ok == "false") {
+            return false;
+        }
+    }
+
+    function add() {
+        // documeme.write(fname);
+        // document.write(lname);
+        // document.write(age);
+        document.getElementById("n").value = fname;
+
+
+    }
+</script>
+<style>
+    .form {
+        text-align: center;
+        padding-top: 200px;
+    }
+    
+    .form1 {
+        padding-top: 10px;
+    }
+    
+    body {
+        background-color: aquamarine;
+    }
+</style>
+
+<body>
+    <form action="#" onsubmit="return myfunction()">
+        <div class="form">
+            First Name: <input type="text" name="fname" if="fname" required><br> Last Name: <input type="text" name="lname" if="lname" required><br> age:
+            <input type="number" id="age" name="age" min=10 max=70 required><br>
+            <input type="submit" name="add" value="Add" id="submit1" onclick="add()">
+            <input type="submit" name="edit" value="Edit" id="submit2">
+            <input type="submit" name="remove" value="Remove" id="submit3">
+            <input type="text" name="n" id="n">
+
+        </div>
+    </form>
+    <!-- <div class="form1">
+            <table border="1px">
+                <td>
+                    First Name
+                </td>
+                <td>
+                    Last Name
+                </td>
+                <td>
+                    Age
+                </td>
+
+            </table>
+        </div> -->
+
+
+</html>
+
+
+
+
+
+</form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Field Set</title>
+</head>
+
+<body background="images/images.jpg" style="padding-top: 10%;">
+    <form action="basics.html" method="POST">
+        <center>
+            <fieldset style="width: 25%;">
+
+                <legend align="center" padding-left: 50%;>
+                    Personal Details
+                </legend>
+
+                <center> <input type="email" name="email" placeholder="Username" required="required" /><br><br>
+                    <input type="password" name="pwd" placeholder="Password" pattern=" (?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required="required " />
+                    <br><br>
+                    <input type="checkbox" name="checkbox " />Keep me logged in
+                    <br><br>
+                    <input type="submit" name="submit " value="Submit" />
+                </center>
+                <br>
+            </fieldset>
+        </center>
+    </form>
+   
+</body>
+
+</html>

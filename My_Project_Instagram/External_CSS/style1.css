@@ -1,0 +1,130 @@
+#img {
+    float: left;
+    /* margin-right: -100px; */
+    margin-left: -60px;
+}
+
+#gif {
+    float: left;
+    margin-left: -400px;
+    margin-top: 100px;
+}
+
+.reg {
+    border: 50px 70px 50px 100px;
+    border-color: lightgrey;
+    border-width: 2px;
+    /* float: right; */
+    /* margin-left: 400px; */
+    /* padding: 5px 5px 5px 5px; */
+}
+
+.de {
+    height: 500px;
+    width: 1000px;
+    padding-left: -40px;
+    padding-right: -400px;
+    /* padding-right: 50px; */
+    /* padding-left: 50px;
+        padding-top: 50px; */
+    background: white;
+    border-radius: 2px;
+    border: brown;
+}
+
+#input {
+    margin-bottom: 10px;
+    width: 35%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    background-color: ghostwhite;
+}
+
+#h1 {
+    font-weight: bold;
+    /* font-family: billabong; */
+    font-family: 'Satisfy', cursive;
+    padding-right: 50px;
+}
+
+#h4 {
+    color: lightgray;
+    padding: inherit;
+    margin-top: 80px;
+    margin-left: 250px;
+    border: inherit;
+    position: absolute;
+    text-align: center;
+    float: left;
+}
+
+#submit_login {
+    width: 35%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: royalblue;
+    color: white;
+}
+
+#submit {
+    width: 35%;
+    height: 30px;
+    border-radius: 4px;
+    background-color: royalblue;
+    color: white;
+    margin-left: 200px;
+    ;
+}
+
+#h4 {
+    color: lightgray;
+    padding: inherit;
+    margin-top: 80px;
+    margin-left: 250px;
+    border: inherit;
+    position: absolute;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    margin-left: 530px;
+}
+
+.de1 {
+    height: 110px;
+    width: 1000px;
+    background-color: white;
+    margin-left: 550px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+#imgg2 {
+    margin-left: 450px;
+    margin-top: -125px;
+}
+
+#imgg1 {
+    margin-left: 700px;
+    margin-top: -125px;
+}
+
+.bottom {
+    /* float: left; */
+    color: black;
+    /* float: left; */
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    padding-right: 30 px;
+}
+
+.footer {
+    color: grey;
+    /* margin-top: 180px; */
+    text-align: center;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>HackerRank</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js">
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <style>
+        .header {
+            height: 5%;
+            background-color: green;
+        }
+        
+        .footer {
+            height: 5%;
+            background-color: green;
+            margin-top: 50%;
+        }
+        
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            background-color: ghostwhite;
+            padding: 45px;
+            box-sizing: border-box;
+            /* border: 1px solid beige;
+            box-shadow: 0 5px 10px solid green; */
+        }
+        
+        .content-header {
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 80%;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        
+        li {
+            float: left;
+            overflow: hidden;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: rgb(214, 234, 243);
+            text-decoration: none;
+        }
+        
+        .nav.hover {
+            /* display: inline; */
+            background-color: greenyellow;
+        }
+        
+        .form .body .fb {
+            width: 20%;
+            height: 20%;
+            padding-left: 10%;
+            color: blue;
+        }
+        
+        .form .body .google {
+            width: 20%;
+            height: 20%;
+            padding-left: 30%;
+            margin-top: -17%;
+            color: chocolate;
+        }
+        
+        .form .body .gmail {
+            width: 20%;
+            height: 20%;
+            padding-left: 50%;
+            /* margin-top: -10%; */
+            color: red;
+        }
+        
+        .form .body .linkedin {
+            width: 20%;
+            height: 20%;
+            padding-left: 60%;
+            margin-bottom: -20%;
+            color: blue;
+        }
+        
+        .login {
+            margin-bottom: 45%;
+        }
+        
+        #in {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header"></div>
+    <center><img src="images/img1.png" style="padding-top: -150px;"></center>
+    <div class="form">
+
+        <div class="head" class="signup">
+            <div onclick="changeTab(this)" data-tab="login" class="login-tab">Login</div>
+            <div onclick="changeTab(this)" data-tab="signup" class="signup-tab">SignUp</div>
+        </div>
+        <div class="body" id="form-body">
+
+            <div class="login">
+                <div class="form-row">
+                    <!-- <label for="">Email</label> -->
+                    <input type="text" placeholder="Email" id="in">
+                </div>
+
+                <div class="form-row">
+                    <!-- <label for="">Password</label> -->
+                    <input type="password" placeholder="Password" id="in">
+                </div>
+
+                <div class="rem-row">
+                    <input type="checkbox" id="rem">
+                    <label for="rem">Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <input type="button" class="btn btn-success" value="Login"></input>
+                    <span>OR</span>
+                </div>
+                <p>
+
+                    <div class="social-form fb">
+                        <i class="fa fa-facebook fa-3x"></i>
+                    </div>
+
+                    <div class="social-form google">
+                        <i class="fa fa-google fa-3x"></i>
+                    </div>
+
+                    <div class="social-form gmail">
+                        <i class="fa fa-envelope fa-3x"></i>
+                    </div>
+
+                    <div class="social-form linkedin">
+                        <i class="fa fa-linkedin-square fa-3x"></i>
+                    </div>
+                </p>
+            </div>
+
+            <div class="signup">
+                <div class="form-row">
+                    <!-- <label for="">Name</label> -->
+                    <input type="text" placeholder="Name" id="in">
+                </div>
+                <div class="form-row">
+                    <!-- <label for="">Email</label> -->
+                    <input type="email" placeholder="Email" id="in">
+                </div>
+                <div class="form-row">
+                    <!-- <label for="">Password</label> -->
+                    <input type="password" placeholder="Password" id="in">
+                </div>
+                <div class="rem-row">
+                    <input type="checkbox" id="agr">
+                    <label for="agr">Agree terms & conditions</label>
+                </div>
+                <div class="form-row">
+                    <input type="button" class="btn btn-success" value="SignUp"></input>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="footer">
+
+    </div>
+</body>
+
+</html>

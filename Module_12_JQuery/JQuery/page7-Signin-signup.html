@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <body>
+        <div>
+            <input type="button" value="Sign-In" id="btn1">
+            <input type="button" value="Sign-Up" id="btn2">
+        </div>
+        <div id="content">
+            <div id="signin">
+                <input type="email" placeholder="Email-Id" required><br>
+                <input type="password" placeholder="password" required><br>
+                <input type="button" value="Sign-In">
+
+            </div>
+            <div id="signup">
+                <input type="text" placeholder="First Name" required><br>
+                <input type="text" placeholder="Last Name" required><br>
+                <input type="text" placeholder="Register Number" required><br>
+                <input type="email" placeholder="Email-Id" required><br>
+                <input type="password" placeholder="password" required><br>
+                <input type="button" value="Sign-In">
+
+            </div>
+        </div>
+        <script>
+            $(document).ready(function() {
+
+                $("#signup").hide();
+                $("#signin").hide();
+
+
+                $("#btn1").click(function() {
+                    if ($("#signin").is(':visible')) {
+                        $("#signup").hide();
+                        $("#signin").show();
+
+                    } else
+                        $("#signin").show();
+                    $("#signup").hide();
+
+
+                })
+
+
+
+                $("#btn2").click(function() {
+                    if ($("#signup").is(':visible')) {
+                        $("#signin").hide();
+                        $("#signup").show();
+
+                    } else {
+                        $("#signin").hide();
+                        $("#signup").show();
+                    }
+
+                })
+
+
+            });
+        </script>
+    </body>
+</head>
+
+</html>

@@ -1,0 +1,11 @@
+<html>
+<p id="demo"></p>
+<script>
+    var text = '{"Employee":[' +
+        '{"Firstname":"Ann","lastname":"james"},' +
+        '{"firstname":"jinu","lastname":"James"}]}';
+    obj = JSON.parse(text);
+    document.getElementById("demo").innerHTML = obj.Employee[0].FirstName;
+</script>
+
+</html>

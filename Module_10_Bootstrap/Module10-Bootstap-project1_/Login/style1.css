@@ -1,0 +1,65 @@
+                                        body {
+                                            margin: 0;
+                                            padding: 0;
+                                            background-image: url(images/img1.jpg);
+                                            background-size: cover;
+                                            background-position: center;
+                                        }
+                                        
+                                        .login {
+                                            width: 280;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+                                            color: white;
+                                        }
+                                        
+                                        .login h1 {
+                                            float: left;
+                                            font-size: 40px;
+                                            border-bottom: 6px solid green;
+                                            margin-bottom: 50px;
+                                            padding: 13;
+                                        }
+                                        
+                                        .textbox {
+                                            width: 100%;
+                                            overflow: hidden;
+                                            font-size: 20px;
+                                            margin: 8px 0;
+                                            padding: 8px 0;
+                                            border-bottom: 1px solid green;
+                                        }
+                                        
+                                        .textbox i {
+                                            width: 26px;
+                                            float: left;
+                                            text-align: center;
+                                        }
+                                        
+                                        .textbox input {
+                                            border: none;
+                                            outline: none;
+                                            background: none;
+                                            float: left;
+                                            color: white;
+                                            font-size: 18px;
+                                            float: left;
+                                            margin: 0 10px;
+                                            width: 80%;
+                                        }
+                                        
+                                        .no-outline {
+                                            outline: none;
+                                        }
+                                        
+                                        .btn {
+                                            width: 100%;
+                                            background: none;
+                                            border: 2px solid green;
+                                            color: white;
+                                            padding: 5px;
+                                            font-size: 18px;
+                                            margin: 12px 0;
+                                        }

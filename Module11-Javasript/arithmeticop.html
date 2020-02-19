@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <script>
+        var n1 = prompt("enter the number 1");
+        var n2 = prompt("Enter the number 2")
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        function add(n1, n2) {
+            var sum = n1 + n2;
+            document.write(sum);
+            // window.print();
+        }
+
+        function sub(n1, n2) {
+            var sub = n1 - n2;
+            document.write(sub);
+        }
+
+        function mul(n1, n2) {
+            var mul = n1 * n2;
+            document.write(mul);
+        }
+
+        function div(n1, n2) {
+            var div = n1 / n2;
+            document.write(div);
+        }
+    </script>
+    <input type="submit" onclick="add(n1,n2)" value="Add">
+    <input type="submit" onclick="sub(n1,n2)" value="Sub">
+    <input type="submit" onclick="mul(n1,n2)" value="Mul">
+    <input type="submit" onclick="div(n1,n2)" value="Div">
+
+</head>
+
+</html>

@@ -1,0 +1,18 @@
+{
+    "songs": [{
+            "name": "Dancing On My Own",
+            "singer": "Calum Scott",
+            "file": "a.mp3"
+
+
+        },
+        {
+            "name": "One Call Away",
+            "singer": "Calum Scott",
+            "file": "b.mp3"
+
+
+        }
+
+    ]
+}

@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script>
+        function addUpdate() {
+            var a = parseInt(document.getElementById("n1").value);
+            var b = parseInt(document.getElementById("n2").value);
+            document.getElementById("n3").value = a + b;
+        }
+    </script>
+</head>
+<input type="text" id="n1" name="number1">
+<input type="text" id="n2" name="number2">
+<input type="text" id="n3" name="number3" placeholder="Result">
+
+<input type="button" name="button" value="Add" onclick="addUpdate()">
+
+</html>

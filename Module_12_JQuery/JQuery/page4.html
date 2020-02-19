@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <body>
+        <h1>DDU-GKY 1</h1>
+        <h1>DDU-GKY 2</h1>
+        <h1>DDU-GKY 3</h1>
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Python</li>
+
+        </ul>
+        <ul>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>JQ</li>
+            <li>JS</li>
+
+        </ul>
+        <button>Hide</button>
+        <script>
+            $(document).ready(function() {
+                $("button").click(function() {
+                    $(this).hide();
+                    $("h1:first").hide();
+                    $("h1:last").hide();
+                    $("ul li:first").hide();
+                    $("ul li:last").hide();
+                    $("ul li:first-child").hide();
+
+
+                })
+
+                // $("h1").click(function() {
+                //     $(this).hide();
+                // })
+
+            })
+        </script>
+    </body>
+</head>
+
+</html>

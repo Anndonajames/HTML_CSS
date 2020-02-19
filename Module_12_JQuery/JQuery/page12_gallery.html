@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">SHIP</a>
+            </div>
+        </div>
+    </nav>
+
+    <body>
+        <script>
+            $(document).ready(function() {
+                $('img').click(function() {
+                    var src = $(this).attr('src');
+                    $("#model-img").attr('src', src);
+                    $("#pkp").modal('show');
+                });
+            });
+        </script>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header"><a href="#" class="navber-brand">SHIP</a></div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header"> Gallery</h2>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <a class="thumbnail" href="#"><img class="img-responsive" src="images/ship.jpg"></a>
+                </div>
+            </div>
+            <div class="modal fade" role="dialog" id="pkp">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <img src=" " id="model-img"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</head>
+
+</html>

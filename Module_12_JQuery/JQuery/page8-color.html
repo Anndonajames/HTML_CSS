@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script src="js/jquery-1.11.0.js"></script>
+    <style>
+        #b1 {
+            height: 300px;
+            width: 200px;
+            float: left;
+            background-color: red;
+        }
+        
+        #b2 {
+            height: 300px;
+            width: 200px;
+            float: left;
+            background-color: green;
+        }
+        
+        #b3 {
+            height: 300px;
+            width: 200px;
+            float: left;
+            background-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $("#b1").fadeOut("slow");
+            $("#btn1").click(function() {
+                $("#b1").fadeIn("slow");
+            })
+            $("#b2").fadeOut("slow");
+            $("#btn2").click(function() {
+                $("#b2").fadeIn("slow");
+            })
+            $("#b3").fadeOut("slow");
+            $("#btn3").click(function() {
+                $("#b3").fadeTo("slow", 0.90);
+            })
+        })
+    </script>
+
+    <body>
+        <input type="button" id="btn1" value="Button1">
+        <input type="button" id="btn2" value="Button2">
+        <input type="button" id="btn3" value="Button3">
+
+        <div id="b1"></div>
+        <div id="b2"></div>
+        <div id="b3"></div>
+
+    </body>
+</head>
+
+</html>

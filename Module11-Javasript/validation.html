@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script>
+        function myFunction() {
+            var at = document.getElementById("email").value.indexOf("@");
+            var age = document.getElementById("age").value;
+            var fname = document.getElementById("fname").value;
+            submitOk = "true";
+            if (fname.length > 10 || fname.length == 0) {
+                alert("Name no more than 10 characters");
+                submitOk = "false";
+            }
+            if (isNaN(age) || age < 1 || age > 100) {
+                alert("Age must be between 1 and 100");
+                submitOk = "false";
+            }
+            if (at == -1) {
+                alert("Not a valid email");
+                submitOk = "false";
+            }
+
+            if (submitOk == "false") {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <form action="http://www.ipsrjobs.com/vacancy/Software-Engineer-Trainee-Onetikk-3097.htm" onsubmit="return myFunction()">
+        <input type="text" id="fname" size="20" name="fname"><br>
+        <input type="text" id="age" size="20" name="age"><br>
+        <input type="email" id="email" size="20" name="mail">
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Login</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(images/img4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .main {
+        padding: 50%;
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border: 5px blue;
+    }
+    
+    .de {
+        padding: 60px 40px 50px 40px;
+        background: mediumpurple;
+        border-radius: 10px;
+        border: brown;
+    }
+    
+    #img {
+        border-radius: 50%;
+        margin-left: 60px;
+        margin-top: -120px;
+        position: absolute;
+        width: 80;
+        height: 80;
+    }
+    
+    .submit1 {
+        border-radius: 10px;
+        padding: 10px 20px;
+        background: blue;
+        color: white;
+        margin-left: 0px;
+        margin-top: 25%;
+        margin-bottom: -15px;
+        border: none;
+        outline: none;
+    }
+    
+    .submit2 {
+        border-radius: 10px;
+        padding: 10px 20px;
+        background: blue;
+        color: white;
+        margin-top: -10%;
+        border: none;
+        outline: none;
+        margin-left: 100px;
+    }
+    
+    #input {
+        width: 200px;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid red;
+        padding: 6%;
+        margin-bottom: 15%;
+        color: white;
+    }
+    
+    #input:hover {
+        background-color: black;
+    }
+    
+    .submit1:hover {
+        background: green;
+    }
+    
+    .submit2:hover {
+        background: green;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <form action="registration.html" id="form"></form>
+        <form action="page1.html" method="POST" id="form1">
+            <div class="de">
+                <img src="images/img5.jpg" id="img" />
+                <input type="email" name="email" placeholder="Username" required="required" id="input" /><br>
+                <input type="password" name="pwd" placeholder="Password" required="required" minlength="8" id="input" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, 
+                and at least 8 or more characters" /><br>
+                <a href=" ">Forgot Password</a>
+                <br>
+                <input type="submit" name="submit" value="Sign In" form="form1" class="submit1" />
+                <input type="submit" name="submit1" value="sign Up" form="form" class="submit2" />
+                <br>
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+
+
+</html>

@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>css</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/bootstrap-3.3.7/docs/dist/js/bootstrap.min.js">
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </script>
+
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url(C:/Users/USER/Downloads/as.jpg);
+        background-repeat: no-repeat;
+    }
+    
+    .error_form {
+        color: red;
+    }
+    
+    .main {
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+    }
+    
+    .de {
+        background-color: ghostwhite;
+        border: 2px solid;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+    }
+    
+    .button1 {
+        border-radius: 20px;
+        padding: 10px 20px;
+        background: royalblue;
+        color: mintcream;
+        margin-top: 10px;
+        border: none;
+        outline: none;
+        margin-left: 50px;
+    }
+    
+    .input1 {
+        width: 50%;
+        padding: 6px;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid red;
+        margin-bottom: 15px;
+        color: black;
+    }
+    
+    .input1:hover {
+        background-color: lightgrey;
+    }
+    
+    img {
+        border-radius: 50%;
+        position: absolute;
+        margin-left: -40px;
+        margin-top: -50px;
+    }
+</style>
+
+<body>
+    <div class="main" align="center" width="300">
+
+        <div class="de">
+            <form action="cssreg.html" id="id2" method="get"></form>
+            <form action="https://ddugky.freshgrad.co" id="id1" method="get">
+                <tr>
+                    <td>Chose Username: </td>
+                    <td><input type="text" class="form_text" id="form_username"></td>
+                    <td>
+                        <div class="error_form" id="username_error_message"></div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" class="form_text" id="form_password"></td>
+                    <td>
+                        <div class="error_form" id="password_error_message"></div>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td>Retype Password: </td>
+                    <td><input type="password" class="form_text" id="form_re_password"></td>
+                    <td>
+                        <div class="error_form" id="retype_password_error_message"></div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" class="form_text" id="form_email"></td>
+                    <td>
+                        <div class="error_form" id="email_error_message"></div>
+                    </td>
+                </tr>
+                <input type="submit" name="Login" value="Login" form="id1" class="button1">
+
+        </div>
+    </div>
+
+    </form>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <script src="js/jquery-1.11.0.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+        $("#btn").bind('click', add),
+            $("#a").bind("keyup", ch),
+            $("#b").bind("keyup", ch1),
+            $("#a").bind("blur", myblur) //out of typing in a
+        $("#b").bind("focus", myfocus) //cursor is in b or selected the input text field
+
+    });
+
+    function add() {
+        var c = Number($("#a").val()) + Number($("#b").val());
+        $("#out").html("total= " + c);
+    }
+
+    function ch() {
+        $("#out").html("A is typing");
+    }
+
+
+    function ch1() {
+        $("#out").html("B is typing");
+    }
+
+    function myblur() {
+        $("#out").html("A is out of typing");
+    }
+
+    function myfocus() {
+        $("#out").html("B is in focus");
+    }
+</script>
+
+<body>
+    <input type="text" id="a">
+    <input type="text" id="b">
+    <input type="button" value="Add" id="btn">
+    <p id="out"></p>
+</body>
+
+</html>

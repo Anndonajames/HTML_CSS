@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Smart Watch</title>
+
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<div class="timer" style="margin-top: -200px; margin-left: 150px;">
+    <img src="smart-watch.jpg">
+
+
+    <div class="button">
+        <h1 style="color: grey;"><time>00:00:00</time></h1>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="clear">Reset</button>
+    </div>
+    <div class="icon" style="margin-top: 50px;margin-left: 410px;">
+        <a href="message.html"><i class="fa fa-envelope" aria-hidden="true" id="id1" style="font-size: 20px;"></i></i></a>
+        <a href="music.html"><i class="fa fa-music" aria-hidden="true" id="id2" style="font-size: 20px;"></i></i></a>
+        <a href="timer.html"><i class="fa fa-clock-o" aria-hidden="true" id="id3" style="font-size: 20px;"></i></i></i></a>
+    </div>
+
+</div>
+
+</div>
+
+<body>
+    <script>
+        var h1 = document.getElementsByTagName('h1')[0],
+            start = document.getElementById('start'),
+            stop = document.getElementById('stop'),
+            clear = document.getElementById('clear'),
+            seconds = 0,
+            minutes = 0,
+            hours = 0,
+            t;
+
+        function add() {
+            seconds++;
+            if (seconds >= 60) {
+                seconds = 0;
+                minutes++;
+                if (minutes >= 60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }
+
+            h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+            timer();
+        }
+
+        function timer() {
+            t = setTimeout(add, 1000);
+        }
+
+
+
+        /* Start button */
+        start.onclick = timer;
+
+        /* Stop button */
+        stop.onclick = function() {
+            clearTimeout(t);
+        }
+
+        /* Clear button */
+        clear.onclick = function() {
+            h1.textContent = "00:00:00";
+            seconds = 0;
+            minutes = 0;
+            hours = 0;
+            clearTimeout(t);
+
+        }
+    </script>
+</body>
+
+</html>
